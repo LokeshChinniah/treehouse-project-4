@@ -1,0 +1,36 @@
+.btn {
+
+  &--default {
+    @extend %btn;
+    background-color: $sky-blue;
+  }
+
+  &--success {
+    @extend %btn;
+    background-color: $light-green;
+  }
+
+  &--error {
+    @extend %btn;
+    background-color: $eraser-pink;
+  }
+
+  &--warning {
+    @extend %btn;
+    background-color: $coral;
+  }
+
+  &--info {
+    @extend %btn;
+    background-color: $purple;
+  }
+}
+
+.btn--success,
+.btn--error,
+.btn--warning,
+.btn--info {
+  @include desktop($desktop) {
+    margin-left: 20px;
+  }
+}

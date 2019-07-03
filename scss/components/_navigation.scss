@@ -1,0 +1,32 @@
+.nav {
+  display: block;
+  margin-top: 18px;
+  margin-bottom: 40px;
+  text-align: center;
+    li {
+      line-height: 45px;
+      padding: 5px 10px;
+    }
+  @include desktop($desktop){
+    display: flex;
+    flex-direction: row;
+    margin-right: 120px;
+    text-align: right;
+  }
+}
+
+.nav-item {
+
+  @include desktop($desktop){
+    margin: 0 20px;
+  }
+
+  &:hover {
+    background-color: $color-secondary;
+    border-radius: 5px;
+  }
+
+  &:hover a {
+    color: white;
+  }
+}

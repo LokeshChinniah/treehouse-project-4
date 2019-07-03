@@ -1,0 +1,33 @@
+.container {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 40px;
+
+  @include desktop($desktop) {
+    font-size: 20px;
+  }
+}
+
+.headline-secondary {
+  margin-bottom: 20px;
+  margin-left: 5px;
+}
+
+.headline--primary {
+  padding-left: 20px;
+  padding-bottom: 20px;
+  color: $color-secondary;
+}
+
+.link {
+  @extend %text-deco;
+  color: $color-primary;
+}
+
+.blockquote {
+  border-left: 8px solid $color-secondary;
+  padding-left:20px;
+  font-style: italic;
+  font-size: 18px;
+  margin-bottom: 50px;
+}

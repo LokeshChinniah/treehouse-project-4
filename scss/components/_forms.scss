@@ -1,0 +1,17 @@
+.form__label--hidden {
+  display: none;
+}
+
+.form {
+  text-align: center;
+    &__input {
+      margin: auto;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      padding: 10px;
+      display: block;
+      border: none;
+      border-bottom: 4px solid $color-secondary;
+      width: 90%;
+    }
+}
